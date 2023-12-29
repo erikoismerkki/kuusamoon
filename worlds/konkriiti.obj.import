@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://col6wvpyxuf1j"
+path="res://.godot/imported/konkriiti.obj-5d4196241e5988d15912023c64c6bbcb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/konkriiti.obj-5d4196241e5988d15912023c64c6bbcb.mesh"]
+
+source_file="res://worlds/konkriiti.obj"
+dest_files=["res://.godot/imported/konkriiti.obj-5d4196241e5988d15912023c64c6bbcb.mesh", "res://.godot/imported/konkriiti.obj-5d4196241e5988d15912023c64c6bbcb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

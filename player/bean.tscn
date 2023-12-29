@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://k3f5yns1r2na"]
+
+[ext_resource type="Script" path="res://player/Bean.gd" id="1_1yjct"]
+[ext_resource type="Script" path="res://player/Pää.gd" id="2_vlg2x"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hh7u0"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_5cm3e"]
+
+[node name="Bean" type="CharacterBody3D"]
+floor_stop_on_slope = false
+floor_max_angle = 0.506145
+script = ExtResource("1_1yjct")
+
+[node name="Pää" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.501569, 0)
+script = ExtResource("2_vlg2x")
+
+[node name="Camera3D" type="Camera3D" parent="Pää"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.00858665, 0)
+fov = 81.1
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_hh7u0")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_5cm3e")

@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://k3f5yns1r2na"]
+[gd_scene load_steps=6 format=3 uid="uid://k3f5yns1r2na"]
 
 [ext_resource type="Script" path="res://player/Bean.gd" id="1_1yjct"]
 [ext_resource type="Script" path="res://player/Pää.gd" id="2_vlg2x"]
+[ext_resource type="AudioStream" uid="uid://v0ujad4kys4l" path="res://audio/hypahdys.wav" id="3_wvd1p"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hh7u0"]
 
@@ -25,3 +26,6 @@ shape = SubResource("CapsuleShape3D_hh7u0")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("CapsuleMesh_5cm3e")
+
+[node name="hyppy" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_wvd1p")

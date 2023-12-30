@@ -54,7 +54,6 @@ shadow_blur = 4.838
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.904745, 0, 0, 0, 0.904745, 0, 0, 0, 0.904745, -9.45992, -68.385, -9.33453)
 material_override = SubResource("StandardMaterial3D_avqox")
-ignore_occlusion_culling = true
 mesh = ExtResource("3_bou8f")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]

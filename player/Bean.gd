@@ -21,6 +21,7 @@ func _physics_process(delta):
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY+bonusspeed
+		$hyppy.play()
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
@@ -46,7 +47,7 @@ func _input(event):
 	if event is InputEventMouseButton:
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	if event.is_action_pressed("run"):
-		bonusspeed = 3
+		bonusspeed = 4
 	if event.is_action_released("run"):
 		bonusspeed = 0
 

@@ -1,14 +1,15 @@
-[gd_scene load_steps=16 format=3 uid="uid://fonr0jy526vm"]
+[gd_scene load_steps=17 format=3 uid="uid://fonr0jy526vm"]
 
 [ext_resource type="PackedScene" uid="uid://k3f5yns1r2na" path="res://player/bean.tscn" id="1_eet3m"]
-[ext_resource type="Texture2D" uid="uid://bjp7l7fl0rtg4" path="res://worlds/overworld/800px-Red_brick_wall_texture.JPG" id="2_wxsu6"]
-[ext_resource type="ArrayMesh" uid="uid://col6wvpyxuf1j" path="res://worlds/overworld/konkriiti.obj" id="3_bou8f"]
+[ext_resource type="Texture2D" uid="uid://bjp7l7fl0rtg4" path="res://worlds/800px-Red_brick_wall_texture.JPG" id="2_wxsu6"]
+[ext_resource type="ArrayMesh" uid="uid://col6wvpyxuf1j" path="res://worlds/konkriiti.obj" id="3_bou8f"]
 [ext_resource type="PackedScene" uid="uid://tglsmo4i423s" path="res://models/kalja.blend" id="4_jt8gx"]
 [ext_resource type="PackedScene" uid="uid://dndvkhx72rb2s" path="res://models/teleportti.blend" id="5_4wnup"]
 [ext_resource type="PackedScene" uid="uid://bihc7oqnab10a" path="res://models/tupakka-aski.blend" id="6_eo6b4"]
 [ext_resource type="PackedScene" uid="uid://b68yvamgq5c07" path="res://models/saw.blend" id="7_2mdbr"]
 [ext_resource type="PackedScene" uid="uid://bmojmt01007j2" path="res://models/mikki.blend" id="8_ehbj3"]
 [ext_resource type="PackedScene" uid="uid://cxwtfqnonmbv2" path="res://models/gramofoni-fff.blend" id="9_u733j"]
+[ext_resource type="PackedScene" uid="uid://cppkfm2mwqcia" path="res://models/gramofoni-R.blend" id="10_klydj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ocl4k"]
 
@@ -104,3 +105,6 @@ transform = Transform3D(0.644827, 0, 0, 0, 0.644827, 0, 0, 0, 0.644827, -25.2899
 
 [node name="gramofoni-fff" parent="." instance=ExtResource("9_u733j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.59322, -43.2401, 5.61734)
+
+[node name="gramofoni-R" parent="." instance=ExtResource("10_klydj")]
+transform = Transform3D(0.833616, 0.552325, -0.00467546, 0, -0.00846476, -0.999964, -0.552344, 0.833586, -0.00705636, -13.1917, -136.981, 156.946)
